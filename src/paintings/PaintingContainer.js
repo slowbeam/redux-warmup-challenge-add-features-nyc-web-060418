@@ -6,6 +6,8 @@ import * as actions from '../actions';
 // NOTE: actions is a directory.
 // By default import will look for a file called index.js in any directory
 
+  console.log(actions)
+
 class PaintingContainer extends Component {
   componentDidMount() {
     // NOTE: no async stuff yet. For now we'll
@@ -14,6 +16,8 @@ class PaintingContainer extends Component {
     // so we can easily add async later
     this.props.fetchPaintings();
   }
+
+
 
   render() {
     return (
